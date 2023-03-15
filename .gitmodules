@@ -1,0 +1,3 @@
+[submodule "usr/local/bin/bm2-battery-monitor"]
+	path = usr/local/bin/bm2-battery-monitor
+	url = https://github.com/KrystianD/bm2-battery-monitor
