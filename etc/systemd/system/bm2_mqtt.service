@@ -1,0 +1,16 @@
+[Unit]
+Description=BM2 Battery Monitor MQTT service
+After=network-online.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+#User=root
+ExecStart=/usr/bin/python3 /usr/local/bin/bm2-battery-monitor/bm2_mqtt/bm2_mqtt.py --mqtt-topic bm2 --bm2-addr B0:B1:XX:XX:XX
+StandardOutput=file:/home/pi/Logs/bm2_mqtt.log
+StandardError=inherit
+
+[Install]
+WantedBy=multi-user.target
+
