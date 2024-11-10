@@ -7,9 +7,10 @@ Type=simple
 User=pi
 Group=pi
 #User=root
+ExecStartPre=-!/bin/sh -c '/bin/rm -r /home/pi/Logs/bm2_mqtt.*'
 ExecStart=/usr/bin/python3 /usr/local/bin/bm2-battery-monitor/bm2_mqtt/bm2_mqtt.py --mqtt-topic bm2 --bm2-addr B0:B1:XX:XX:XX
 StandardOutput=file:/home/pi/Logs/bm2_mqtt.log
-StandardError=inherit
+StandardError=file:/home/pi/Logs/bm2_mqtt.error
 
 [Install]
 WantedBy=multi-user.target
