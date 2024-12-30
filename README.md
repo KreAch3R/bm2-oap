@@ -7,6 +7,9 @@ Connect your BM2 (Battery Monitor 2) car battery monitor to your raspberry pi ru
 
 ![image](https://user-images.githubusercontent.com/2224376/225339521-3d725866-8085-41ea-b497-c8f8aea415ba.png)
 
+<a href="https://www.paypal.com/donate/?business=R9V8AAFPNV684&no_recurring=0&currency_code=EUR">
+<img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="300">
+</a>
 
 # Acknowledgement
 
